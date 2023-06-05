@@ -16,4 +16,12 @@ def fibs(n)
   return solutionArray
 end
 
-puts fibs(12)
+def fibs_rec(n)
+  if n < 2
+    return 1
+  end
+  fibs_rec(n-1) + fibs_rec(n-2) 
+end
+
+#puts fibs(12)
+puts fibs_rec(12)
